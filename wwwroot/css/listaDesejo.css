@@ -1,0 +1,170 @@
+.containerTittle {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    gap: 12px;
+}
+
+.desejo {
+    line-height: auto;
+    width: auto;
+    height: auto;
+    color: #FEFEFE;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.containerList {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.containerBotoes {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.posterJogo {
+    max-width: 500px;
+    flex: 1;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 0px 1px 14px 1px;
+    border: 1px solid;
+    border-color: rgba(151, 148, 148, 0.3);
+    border-radius: 15px;
+}
+
+    .posterJogo > img:first-of-type {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+.image {
+    width: 100%;
+    max-width: 619px;
+    height: 217px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.containerTexto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 17px;
+    padding: 18px 10px 0px 10px;
+}
+
+.frame41 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nomeJ {
+    font-size: 18px;
+    font-weight: 700;
+    align-items: start;
+}
+
+.nomeJ2 {
+    font-size: 14px;
+    font-weight: 700;
+    align-items: start;
+    color: #979494;
+}
+
+.containerCategoria {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 7px;
+    border: 1px solid;
+    border-color: rgba(151, 148, 148, 0.5);
+    border-radius: 3.12px;
+    font-size: 12.48px;
+}
+
+.containerEstrela {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerAbrir {
+    background-color: #2596BE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 32px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 4px 3px rgba(37, 150, 190, 0.25);
+    -moz-box-shadow: 0px 0px 4px 3px rgba(37, 150, 190, 0.25);
+    box-shadow: 0px 0px 4px 3px rgba(37, 150, 190, 0.25);
+}
+
+    .containerAbrir:hover {
+        background-color: #0077B6;
+        transition: 0.5s;
+    }
+
+.containerSectionDesejo {
+    width: 100%;
+}
+
+.gridJogos {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+@media only screen and (max-width: 601px) {
+    .containerList {
+        flex-direction: column-reverse;
+    }
+
+    .containerTittle {
+        padding-bottom: 0px;
+    }
+
+    .gridJogos {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 601px) {
+    .gridJogos {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
